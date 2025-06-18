@@ -6,6 +6,7 @@ import { ApiSettings } from './components/ApiSettings';
 import { DreamInterpreterAPI } from './utils/dreamApi.ts';
 import { DreamInterpretation as DreamInterpretationType } from './types/dream.ts';
 
+const GithubIcon = icons.Github;
 function App() {
   const [currentDream, setCurrentDream] = useState<string>('');
   const [interpretation, setInterpretation] = useState<DreamInterpretationType | null>(null);
@@ -148,7 +149,7 @@ function App() {
             <span className="text-sm">Made with care for dreamers</span>
           </div>
           <div className="flex items-center space-x-2">
-            <Github size={16} />
+            <GithubIcon size={16} />
             <span className="text-sm">Powered by Hugging Face AI</span>
           </div>
         </div>
